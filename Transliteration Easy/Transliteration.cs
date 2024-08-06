@@ -49,17 +49,7 @@ namespace TransliterationEasy
             {
                 string currentChar = input[i].ToString();
 
-                if (currentChar == "Є" && i == 0) result.Append("Ye");
-                else if (currentChar == "є" && i > 0) result.Append("ie");
-                else if (currentChar == "Ї" && i == 0) result.Append("Yi");
-                else if (currentChar == "ї" && i > 0) result.Append("i");
-                else if (currentChar == "Й" && i == 0) result.Append("Y");
-                else if (currentChar == "й" && i > 0) result.Append("i");
-                else if (currentChar == "Ю" && i == 0) result.Append("Yu");
-                else if (currentChar == "ю" && i > 0) result.Append("iu");
-                else if (currentChar == "Я" && i == 0) result.Append("Ya");
-                else if (currentChar == "я" && i > 0) result.Append("ia");
-                else if (translitTable.ContainsKey(currentChar))
+                if (translitTable.ContainsKey(currentChar))
                 {
                     result.Append(translitTable[currentChar]);
                 }
