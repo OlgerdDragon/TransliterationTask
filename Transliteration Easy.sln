@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransliterationEasy", "Transliteration Easy\TransliterationEasy.csproj", "{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransliterationManager", "TransliterationManager\TransliterationManager.csproj", "{FFAC674E-BE81-42C7-A0F2-D39B67739E80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC0ECEA4-DF9B-45CA-BAD1-D85AD5041F57}
+	EndGlobalSection
+EndGlobal
