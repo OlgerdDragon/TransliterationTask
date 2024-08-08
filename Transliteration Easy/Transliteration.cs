@@ -44,7 +44,14 @@ namespace TransliterationEasy
 
         public static string Transliterate(string input)
         {
+            bool allUpperCase = input.ToUpper() == input;
+            if (allUpperCase)
+            {
+                input = input.ToLower();
+            }
+
             StringBuilder result = new StringBuilder();
+
             for (int i = 0; i < input.Length; i++)
             {
                 if (i < input.Length - 1 && (input[i] == 'з') && input[i + 1] == 'г')
@@ -60,8 +67,12 @@ namespace TransliterationEasy
                 else
                 {
                     string currentChar = input[i].ToString();
-
-                    if (translitTable.ContainsKey(currentChar))
+                    if (currentChar == "є" && i == 0) result.Append("ye");
+                    else if (currentChar == "ї" && i == 0) result.Append("yi");
+                    else if (currentChar == "й" && i == 0) result.Append("y");
+                    else if (currentChar == "ю" && i == 0) result.Append("yu");
+                    else if (currentChar == "я" && i == 0) result.Append("ya");
+                    else if (translitTable.ContainsKey(currentChar))
                     {
                         result.Append(translitTable[currentChar]);
                     }
@@ -72,7 +83,7 @@ namespace TransliterationEasy
                 }
             }
 
-            return result.ToString();
+            return allUpperCase ? result.ToString() : result.ToString().ToUpper();
         }
     }
 }
