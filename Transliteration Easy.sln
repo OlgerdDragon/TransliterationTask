@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransliterationEasy", "Transliteration Easy\TransliterationEasy.csproj", "{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransliterationEasy", "Transliteration Easy\TransliterationEasy.csproj", "{B9E2A25F-6B53-4358-B8B2-A3D3FA9B22DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransliterationManager", "TransliterationManager\TransliterationManager.csproj", "{FFAC674E-BE81-42C7-A0F2-D39B67739E80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransliterationManager", "TransliterationManager\TransliterationManager.csproj", "{FFAC674E-BE81-42C7-A0F2-D39B67739E80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingService", "TestingService\TestingService.csproj", "{A8280DC6-80D5-4A5B-BF85-FBD3409E8D37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFAC674E-BE81-42C7-A0F2-D39B67739E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8280DC6-80D5-4A5B-BF85-FBD3409E8D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8280DC6-80D5-4A5B-BF85-FBD3409E8D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8280DC6-80D5-4A5B-BF85-FBD3409E8D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8280DC6-80D5-4A5B-BF85-FBD3409E8D37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
