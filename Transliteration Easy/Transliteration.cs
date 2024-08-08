@@ -58,7 +58,7 @@ namespace TransliterationEasy
                 {
                     result.Append("zgh");
                     i++; 
-                }
+                } else
                 if (i < input.Length - 1 && (input[i] == 'З') && input[i + 1] == 'г')
                 {
                     result.Append("Zgh");
@@ -83,7 +83,7 @@ namespace TransliterationEasy
                 }
             }
 
-            return allUpperCase ? result.ToString() : result.ToString().ToUpper();
+            return allUpperCase ? result.ToString().ToUpper() : result.ToString();
         }
     }
 }
