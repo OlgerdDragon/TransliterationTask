@@ -14,15 +14,8 @@ public class Program
 
         //test 2
         string[] inputs = {
-                "Єнакієве",
-                "Ґорґани",
-                "Ніжин",
-                "Біла Церква",
-                "щит",
-                "Щит",
-                "ЩИТ",
-                "ГАЄВИЧ",
-                "єдність",
+              
+                "Згурський",
         };
 
         foreach (string inputLine in inputs)

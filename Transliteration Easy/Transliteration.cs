@@ -47,15 +47,28 @@ namespace TransliterationEasy
             StringBuilder result = new StringBuilder();
             for (int i = 0; i < input.Length; i++)
             {
-                string currentChar = input[i].ToString();
-
-                if (translitTable.ContainsKey(currentChar))
+                if (i < input.Length - 1 && (input[i] == 'з') && input[i + 1] == 'г')
                 {
-                    result.Append(translitTable[currentChar]);
+                    result.Append("zgh");
+                    i++; 
+                }
+                if (i < input.Length - 1 && (input[i] == 'З') && input[i + 1] == 'г')
+                {
+                    result.Append("Zgh");
+                    i++;
                 }
                 else
                 {
-                    result.Append(currentChar);
+                    string currentChar = input[i].ToString();
+
+                    if (translitTable.ContainsKey(currentChar))
+                    {
+                        result.Append(translitTable[currentChar]);
+                    }
+                    else
+                    {
+                        result.Append(currentChar);
+                    }
                 }
             }
 
